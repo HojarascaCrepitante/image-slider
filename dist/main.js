@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://image-slider/./src/index.js?");
+eval("const element = document.querySelector('.slider');\nlet rightPosition = \"0px\";\n\nconst moveRight = function () { \n   if (rightPosition !== \"2100px\"){\n      rightPosition = (parseInt(rightPosition == null ? 0 : rightPosition) + 700 )+\"px\"\n      element.style.right = rightPosition\n   }\n}\nconst moveLeft = function () {\n   if(rightPosition !== \"0px\"){\n      rightPosition = (parseInt(rightPosition == null ? 0 : rightPosition) - 700 )+\"px\"\n      console.log(rightPosition)\n      element.style.right = rightPosition\n   }\n}\n\nconst nextButton = document.querySelector('.next')\nnextButton.addEventListener('click', moveRight)\n\nconst previousButton = document.querySelector('.previous')\npreviousButton.addEventListener('click', moveLeft)\n\n//# sourceURL=webpack://image-slider/./src/index.js?");
 
 /***/ })
 
