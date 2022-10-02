@@ -6,6 +6,7 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
+    background-color: grey;
 }
 .container{
     display: grid;
@@ -46,4 +47,7 @@ color: rgb(165, 32, 125);
 }
 img{
     min-width: 700px;
+}
+.clicked{
+    background-color: blue;
 }
